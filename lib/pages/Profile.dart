@@ -5,7 +5,7 @@ import 'package:techlingo/pages/Update_Profile.dart';
 import 'package:techlingo/pages/login.dart';
 import 'constant.dart';
 import 'package:techlingo/pages/Groups.dart';
-import'Groups.dart';
+import'package:techlingo/pages/Groups.dart';
 
 
 class ProfilePage extends StatefulWidget {

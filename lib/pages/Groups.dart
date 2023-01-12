@@ -5,11 +5,11 @@ import 'package:techlingo/pages/chatroomMobileDev.dart';
 import 'package:techlingo/pages/chatroomSecurity.dart';
 import 'package:techlingo/pages/chatroomWebDev.dart';
 import 'constant.dart';
-import 'Profile.dart';
+import 'package:techlingo/pages/Profile.dart';
 import 'package:getwidget/getwidget.dart';
-import 'HomePage.dart';
+import 'package:techlingo/pages/HomePage.dart';
 import 'package:techlingo/pages/Widgets.dart';
-import 'chatroomAI.dart';
+import 'package:techlingo/pages/chatroomAI.dart';
 import 'package:uuid/uuid.dart';
 
 class Groups extends StatefulWidget {

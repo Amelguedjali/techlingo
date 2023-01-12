@@ -1,0 +1,25 @@
+{
+  "name": "chatbdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexx.js",
+  "scripts": {
+    "start": "node indexx",
+    "dev": "nodemon indexx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4",
+    "bcryptjs": "^2.4.3",
+    "config": "3.3.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0"
+  }
+}

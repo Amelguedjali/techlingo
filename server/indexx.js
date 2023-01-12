@@ -41,20 +41,14 @@ mongoose
 require("./models/message.model");
 require("./models/room.model");
 require("./models/userchat.model");
-require("./models/user.model");
-require("./models/word.model");
+require("./models/user");
+require("./models/word");
 var userchat=mongoose.model('userchat');
 var room=mongoose.model('room');
 var message=mongoose.model('message');
-var user=mongoose.model('user');
+var User=mongoose.model('User');
 var word=mongoose.model('Word');
 
-// middleware
-app.use(express.json());
-app.use(authRouter);
-app.use(adminRouter);
-app.use(wordRouter);
-app.use(userRouter);
 
 // creation du serveur 
 const app=express();
@@ -68,6 +62,12 @@ var io= require("socket.io")(server,{
     }
 });
 
+// middleware
+app.use(express.json());
+app.use(authRouter);
+app.use(adminRouter);
+app.use(wordRouter);
+app.use(userRouter);
 
 
 

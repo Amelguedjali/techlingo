@@ -4,13 +4,13 @@ import 'package:techlingo/pages/chatroomDesign.dart';
 import 'package:techlingo/pages/chatroomMobileDev.dart';
 import 'package:techlingo/pages/chatroomSecurity.dart';
 import 'package:techlingo/pages/chatroomWebDev.dart';
-import 'chatroomAI.dart';
+import 'package:techlingo/pages/chatroomAI.dart';
 import 'constant.dart';
-import 'Profile.dart';
+import 'package:techlingo/pages/Profile.dart';
 import 'package:getwidget/getwidget.dart';
-import 'HomePage.dart';
-import 'Widgets.dart';
-import'Groups.dart';
+import 'package:techlingo/pages/HomePage.dart';
+import 'package:techlingo/pages/Widgets.dart';
+import'package:techlingo/pages/Groups.dart';
 
 class Dictionary extends StatefulWidget {
   const Dictionary({Key? key}) : super(key: key);

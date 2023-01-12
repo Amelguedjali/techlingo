@@ -6,11 +6,11 @@ import 'package:techlingo/pages/OwnMessageWidget.dart';
 import 'package:techlingo/pages/Widgets.dart';
 import 'package:techlingo/pages/msg_model.dart';
 import 'constant.dart';
-import 'msg_model.dart';
+import 'package:techlingo/pages/msg_model.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:socket_io_client/socket_io_client.dart'as IO;
-import 'OwnMessageWidget.dart';
-import 'OtherMessageWidget.dart';
+import 'package:techlingo/pages/OwnMessageWidget.dart';
+import 'package:techlingo/pages/OtherMessageWidget.dart';
 import 'package:intl/intl.dart';
 
 class ChatRoomAI extends StatefulWidget {
@@ -219,47 +219,4 @@ class _ChatRoomAIState extends State<ChatRoomAI> {
                       margin: EdgeInsets.only(left:10, right: 2,bottom: 6 ),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
 
-                      child: TextFormField(
-                        controller: _msgcontroller,
-                        textAlignVertical: TextAlignVertical.center,
-                        keyboardType: TextInputType.multiline ,
-                        maxLines: 6,
-                        minLines : 1,
-
-                        decoration: InputDecoration(
-                          hintText: " Type a message",
-
-                          border: InputBorder.none,
-                          suffixIcon:IconButton(
-                                  onPressed: (){
-                                    if (_msgcontroller.text.length>0)
-                                    {
-                                      sendMsg(_msgcontroller.text, widget.user_name);// this user_name will be passed from the log in or home page
-                                    _msgcontroller.clear();
-                                    }
-                                  },
-                                  icon:Icon(Icons.send_outlined,
-                                  color: black,
-                              ),),
-
-
-                          contentPadding: EdgeInsets.all(5),
-                        ),
-                      )
-                    ),
-                    ),
-
-
-                ],
-              ),
-            )
-          ],
-        ),
-      )
-
-
-
-    );
-
-  }
-}
+      

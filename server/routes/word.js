@@ -1,7 +1,7 @@
 const express = require("express");
 const wordRouter = express.Router();
 const auth = require("../middlewares/auth");
-const { Word } = require("../models/word.model");
+const { Word } = require("../models/word");
 
 
 wordRouter.get("/api/words/", auth, async (req, res) => {

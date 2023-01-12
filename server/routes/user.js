@@ -1,8 +1,8 @@
 const express = require("express");
 const userRouter = express.Router();
 const auth = require("../middlewares/auth");
-const { Word } = require("../models/word.model");
-const User = require("../models/user.model");
+const { Word } = require("../models/word");
+const User = require("../models/user");
 
 userRouter.post("/api/add-to-favorite", auth, async (req, res) => {
   try {

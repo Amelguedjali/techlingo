@@ -1,7 +1,7 @@
 const express = require("express");
 const adminRouter = express.Router();
 const admin = require("../middlewares/admin");
-const { Word } = require("../models/word.model");
+const { Word } = require("../models/word");
 // const { PromiseProvider } = require("mongoose");
 
 // Add word

@@ -3,6 +3,7 @@ import 'package:techlingo/constant.dart';
 
 
 class admin_words_add extends StatefulWidget {
+  static const String routeName = '/add-product';
   const admin_words_add({Key? key}) : super(key: key);
 
   @override

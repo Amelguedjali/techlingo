@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:techlingo/pages/Introduction6.dart';
-import 'package:techlingo/pages/constant.dart';
+import 'package:techlingo/constant.dart';
 
 
 class OnboardModel {

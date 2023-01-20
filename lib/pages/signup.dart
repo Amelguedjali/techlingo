@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constant.dart';
+import 'package:techlingo/constant.dart';
 import 'login.dart';
 import 'Widgets.dart';
 import 'package:techlingo/common/widgets/custom_textfield.dart';
@@ -340,8 +340,6 @@ class _SignupPageState extends State<SignupPage> {
 
 
 
-                ]),))
-
-    );
+                );
   }
 }

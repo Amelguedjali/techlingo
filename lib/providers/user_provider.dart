@@ -1,4 +1,4 @@
-import 'package:projet_bdd/models/user.dart';
+import 'package:techlingo/models/user.dart';
 import 'package:flutter/material.dart';
 
 class UserProvider extends ChangeNotifier {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constant.dart';
+import 'package:techlingo/constant.dart';
 
 
 class buildOtherMessagee extends StatelessWidget{

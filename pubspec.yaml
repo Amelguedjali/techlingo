@@ -41,7 +41,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.15
   getwidget: ^3.0.1
-  percent_indicator: ^3.4.0
+  # percent_indicator: ^3.4.0
   auto_size_text: ^3.0.0
   syncfusion_flutter_charts: ^20.4.41
   charts_flutter: ^0.12.0
@@ -50,6 +50,7 @@ dependencies:
   uuid: ^3.0.6
   intl: ^0.17.0
   mongo_dart: ^0.8.2
+  provider: ^6.0.5
 
 
 dev_dependencies:
@@ -115,12 +116,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-      - family: poppins
-      fonts:
-        - asset: fonts/Poppins-Regular.ttf
-      - family: poppindBold
-      fonts:
-        - asset: fonts/Poppins-Bold.ttf
+      # - family: poppins
+      # fonts:
+      #   - asset: fonts/Poppins-Regular.ttf
+      # - family: poppindBold
+      # fonts:
+      #   - asset: fonts/Poppins-Bold.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

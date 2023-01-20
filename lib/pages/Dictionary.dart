@@ -5,7 +5,7 @@ import 'package:techlingo/pages/chatroomMobileDev.dart';
 import 'package:techlingo/pages/chatroomSecurity.dart';
 import 'package:techlingo/pages/chatroomWebDev.dart';
 import 'package:techlingo/pages/chatroomAI.dart';
-import 'constant.dart';
+import 'package:techlingo/constant.dart';
 import 'package:techlingo/pages/Profile.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:techlingo/pages/HomePage.dart';

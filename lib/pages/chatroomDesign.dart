@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:techlingo/pages/Widgets.dart';
-import 'package:techlingo/pages/constant.dart';
+import 'package:techlingo/constant.dart';
 
 
 class ChatRoomDesign extends StatefulWidget {

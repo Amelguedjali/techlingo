@@ -3,7 +3,7 @@ import 'package:techlingo/pages/Groups.dart';
 import 'package:techlingo/pages/HomePage.dart';
 import 'package:techlingo/pages/Update_Profile.dart';
 import 'package:techlingo/pages/login.dart';
-import 'constant.dart';
+import 'package:techlingo/constant.dart';
 import 'package:techlingo/pages/Groups.dart';
 import'package:techlingo/pages/Groups.dart';
 

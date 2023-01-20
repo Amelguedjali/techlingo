@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:projet_bdd/common/widgets/bottom_bar.dart';
-import 'package:projet_bdd/constants/error_handling.dart';
-import 'package:projet_bdd/constant.dart';
-import 'package:projet_bdd/constants/utils.dart';
-import 'package:projet_bdd/models/user.dart';
-import 'package:projet_bdd/providers/user_provider.dart';
+import 'package:techlingo/common/widgets/bottom_bar.dart';
+import 'package:techlingo/constants/error_handling.dart';
+import 'package:techlingo/constant.dart';
+import 'package:techlingo/constants/utils.dart';
+import 'package:techlingo/models/user.dart';
+import 'package:techlingo/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';

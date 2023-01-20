@@ -1,4 +1,4 @@
-import 'package:projet_bdd/features/admin/models/sales.dart';
+// import 'package:techlingo/features/admin/models/sales.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 

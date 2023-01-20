@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
-import 'package:techlingo/HomePage.dart';
-import 'package:techlingo/Widgets.dart';
-import 'constant.dart';
+import 'package:techlingo/pages/HomePage.dart';
+import 'package:techlingo/pages/Widgets.dart';
+import 'package:techlingo/constant.dart';
 
 import 'package:getwidget/getwidget.dart';
 

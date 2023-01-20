@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:techlingo/pages/Dictionary.dart';
 import 'package:techlingo/pages/Groups.dart';
-import 'constant.dart';
+import 'package:techlingo/constant.dart';
 import 'package:techlingo/pages/Profile.dart';
 import'package:techlingo/pages/Groups.dart';
 import 'package:getwidget/getwidget.dart';

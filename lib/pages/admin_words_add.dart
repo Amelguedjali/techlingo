@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:techlingo/constant.dart';
-
+import 'package:techlingo/features/admin/services/admin_services.dart';
+import 'package:techlingo/constant.dart';
+import 'package:techlingo/constants/utils.dart';
 
 class admin_words_add extends StatefulWidget {
-  static const String routeName = '/add-product';
+  static const String routeName = '/add-word';
   const admin_words_add({Key? key}) : super(key: key);
 
   @override
@@ -11,11 +13,29 @@ class admin_words_add extends StatefulWidget {
 }
 
 class _admin_words_addState extends State<admin_words_add> {
-  final _emailController = TextEditingController();
+  final TextEditingController wordNameController = TextEditingController();
+  final TextEditingController descriptionController = TextEditingController();
+  final TextEditingController priceController = TextEditingController();
+  final TextEditingController quantityController = TextEditingController();
+  // final AdminServices adminServices = AdminServices();
+
+final _addWordFormKey = GlobalKey<FormState>();
+
+@override
+  void dispose() {
+    super.dispose();
+    wordNameController.dispose();
+    descriptionController.dispose();
+    priceController.dispose();
+    quantityController.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body:SingleChildScrollView(
+        child: Form(
+          key: _addWordFormKey,
         child: Column(
           children: [
 
@@ -67,6 +87,7 @@ class _admin_words_addState extends State<admin_words_add> {
                     hintText: 'Enter Your Word',
                     hintStyle: TextStyle(fontSize: 14,)
                 ),
+                controller: wordNameController,
               ),
             ),
             Divider(
@@ -84,6 +105,7 @@ class _admin_words_addState extends State<admin_words_add> {
                     hintText: 'Enter Your description',
                     hintStyle: TextStyle(fontSize: 14,)
                 ),
+                controller: descriptionController,
               ),
             ),
             Divider(
@@ -140,6 +162,7 @@ class _admin_words_addState extends State<admin_words_add> {
 
 
           ],
+        ),
         ),
       ),
     );

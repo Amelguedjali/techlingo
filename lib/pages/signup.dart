@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:techlingo/constant.dart';
 import 'login.dart';
 import 'Widgets.dart';
-import 'package:techlingo/common/widgets/custom_textfield.dart';
+// import 'package:techlingo/common/widgets/custom_textfield.dart';
 import 'package:techlingo/features/auth/services/auth_service.dart';
 
 enum Auth {
@@ -177,6 +177,7 @@ class _SignupPageState extends State<SignupPage> {
                         fontSize: 17,
                       ),),
                       
+                    onPressed: () {  },
                     child: Padding(
                         padding: const EdgeInsets.only(left: 20.0),
                         child: TextField(

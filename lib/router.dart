@@ -1,4 +1,3 @@
-import 'package:techlingo/common/widgets/bottom_bar.dart';
 // import 'package:techlingo/features/address/screens/address_screen.dart';
 import 'package:techlingo/pages/admin_words_add.dart';
 import 'package:techlingo/pages/signup.dart';

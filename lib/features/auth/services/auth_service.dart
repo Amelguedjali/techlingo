@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:techlingo/common/widgets/bottom_bar.dart';
+// import 'package:techlingo/common/widgets/bottom_bar.dart';
 import 'package:techlingo/constants/error_handling.dart';
 import 'package:techlingo/constant.dart';
 import 'package:techlingo/constants/utils.dart';
@@ -77,11 +77,11 @@ class AuthService {
           SharedPreferences prefs = await SharedPreferences.getInstance();
           Provider.of<UserProvider>(context, listen: false).setUser(res.body);
           await prefs.setString('x-auth-token', jsonDecode(res.body)['token']);
-          Navigator.pushNamedAndRemoveUntil(
-            context,
-            BottomBar.routeName,
-            (route) => false,
-          );
+          // Navigator.pushNamedAndRemoveUntil(
+          //   context,
+          //   // BottomBar.routeName,
+          //   (route) => false,
+          // );
         },
       );
     } catch (e) {

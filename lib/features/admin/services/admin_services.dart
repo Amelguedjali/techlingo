@@ -6,7 +6,7 @@ import 'package:techlingo/constants/utils.dart';
 // import 'package:techlingo/features/admin/models/sales.dart';
 import 'package:techlingo/models/word.dart';
 import 'package:techlingo/providers/user_provider.dart';
-// import 'package:cloudinary_public/cloudinary_public.dart';
+import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
@@ -24,7 +24,7 @@ class AdminServices {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
 
     try {
-      final cloudinary = CloudinaryPublic('denfgaxvg', 'uszbstnu');
+      final cloudinary = CloudinaryPublic('dv8dls2kn', 'aqndu7lt');
       List<String> imageUrls = [];
 
       for (int i = 0; i < images.length; i++) {
@@ -40,7 +40,6 @@ class AdminServices {
         images: imageUrls,
         category: category,
         level: level,
-        id: id,
       );
 
       http.Response res = await http.post(
@@ -56,7 +55,7 @@ class AdminServices {
         response: res,
         context: context,
         onSuccess: () {
-          showSnackBar(context, 'Product Added Successfully!');
+          showSnackBar(context, 'Word Added Successfully!');
           Navigator.pop(context);
         },
       );
@@ -65,13 +64,13 @@ class AdminServices {
     }
   }
 
-  // get all the products
+  // get all the words
   Future<List<Word>> fetchAllWords(BuildContext context) async {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
-    List<Word> productList = [];
+    List<Word> wordList = [];
     try {
       http.Response res =
-          await http.get(Uri.parse('$uri/admin/get-products'), headers: {
+          await http.get(Uri.parse('$uri/admin/get-words'), headers: {
         'Content-Type': 'application/json; charset=UTF-8',
         'x-auth-token': userProvider.user.token,
       });
@@ -81,7 +80,7 @@ class AdminServices {
         context: context,
         onSuccess: () {
           for (int i = 0; i < jsonDecode(res.body).length; i++) {
-            productList.add(
+            wordList.add(
               Word.fromJson(
                 jsonEncode(
                   jsonDecode(res.body)[i],
@@ -98,7 +97,7 @@ class AdminServices {
     return wordList;
   }
 
-  void deleteProduct({
+  void deleteWord({
     required BuildContext context,
     required Word word,
     required VoidCallback onSuccess,
@@ -107,7 +106,7 @@ class AdminServices {
 
     try {
       http.Response res = await http.post(
-        Uri.parse('$uri/admin/delete-product'),
+        Uri.parse('$uri/admin/delete-word'),
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',
           'x-auth-token': userProvider.user.token,
@@ -130,37 +129,3 @@ class AdminServices {
   }
 
   }
-// }
-  // Future<Map<String, dynamic>> getEarnings(BuildContext context) async {
-  //   final userProvider = Provider.of<UserProvider>(context, listen: false);
-  //   List<Sales> sales = [];
-  //   int totalEarning = 0;
-  //   try {
-  //     http.Response res =
-  //         await http.get(Uri.parse('$uri/admin/analytics'), headers: {
-  //       'Content-Type': 'application/json; charset=UTF-8',
-  //       'x-auth-token': userProvider.user.token,
-  //     });
-
-  //     httpErrorHandle(
-  //       response: res,
-  //       context: context,
-  //       onSuccess: () {
-  //         var response = jsonDecode(res.body);
-  //         totalEarning = response['totalEarnings'];
-  //         sales = [
-  //           Sales('Mobiles', response['mobileEarnings']),
-  //           Sales('Essentials', response['essentialEarnings']),
-  //           Sales('Books', response['booksEarnings']),
-  //           Sales('Appliances', response['applianceEarnings']),
-  //           Sales('Fashion', response['fashionEarnings']),
-  //         ];
-  //       },
-  //     );
-  //   } catch (e) {
-  //     showSnackBar(context, e.toString());
-  //   }
-  //   return {
-  //     'sales': sales,
-  //     'totalEarnings': totalEarning,
-  //   };
